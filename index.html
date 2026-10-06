@@ -435,7 +435,7 @@
         return showError('Please fill in your name, email, city, and country.');
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('email'))) {
-        return showError('That email address doesn\'t look right.');
+        return showError('That email address format doesn\'t look right.');
       }
       if (sms && !v('phone')) {
         return showError('Add a phone number if you\'d like text updates, or uncheck the box.');
